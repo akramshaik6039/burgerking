@@ -1,13 +1,217 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  
+}
+#nav{
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(245, 235, 220);
+  list-style-type: none;
+  padding: 10px 120px 10px 150px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.164);
+  width: 100%;
+}
+#li1{
+  color: rgb(80, 35, 20);
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#li2{
+  color:rgb(80, 35, 20);;
+  font-size: 18px;
+  flex-basis: 50%;
+  text-align: right;
+  cursor: pointer;
+  font-family: "Flame Bold";
+}
+#li3{
+  color:rgb(80, 35, 20);
+  margin-left: 390px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#cart{
+  background-color: #d62300;
+  padding: 9px 20px 7px 20px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#cart:hover{
+  background-color: #751d0b;
+}
+#bg2{
+  padding: 110px 100px 0px 160px;
+  background-color: rgb(245, 235, 220);
+  width: 100%;
+  height: 480px;
+  display: flex;
+  gap: 150px;
+}
+#bg2h1{
+  font-size: 55px;
+  color:rgb(80, 35, 20);
+  margin-bottom: 20px;
+  font-family: "Flame Bold";
+}
+#bg2btn1{
+  background-color: #d62300;
+  border: none;
+  padding: 15px;
+  width: 300px;
+  border-radius: 30px;
+  color: white;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#bg2btn2{
+  background-color: transparent;
+  border-color: #d62300;
+  padding: 15px;
+  width: 300px;
+  border-radius: 30px;
+  color: #d62300;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: pointer;
+}
+img[alt='gif']{
+  width: 700px;
+  position: relative;
+  bottom: 60px;
+}
+#bg3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px 100px 150px 150px;
+  background-color: rgb(245, 235, 220);
+  
+  
+}
+.cartdiv{
+background-color: white;
+width: 600px;
+height: 500px;
+border-radius: 15px;
+position: relative;
+}
+.cartimg{
+  width: 100%;
+  border-radius: 15px;
+  height: 300px;
+  cursor: pointer;
+}
+.bg3h1{
+  color: rgb(80, 35, 20);
+  padding: 10px 0px 10px 20px;
+  font-size: 22px;
+}
+.bg3p{
+  color: rgb(80, 35, 20);
+  padding: 10px 0px 10px 20px;
+  font-size: 13px;
+}
+.bg3a{
+  color: rgb(80, 35, 20);
+  padding: 10px 0px 10px 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bg3btn{
+  padding: 10px;
+  width: 120px;
+  background-color: transparent;
+  border-color: #d62300;
+  border-radius: 20px;
+  color: #d62300;
+  font-weight: bolder;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  cursor: pointer;
+}
+.bg3btn:hover{
+  background-color: #d624001d;
+}
+
+#bg4{
+  display: flex;
+  background-color: rgb(245, 230, 208);
+  padding: 0px 150px 0px 220px;
+  gap: 70px;
+  padding-bottom: 50px;
+}
+.nav1inner{
+  width: 450px;
+  height: 400px;
+  position: relative;
+}
+img[alt='mobile']
+{
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+.bg4img{
+  width: 200px;
+  margin: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+#nav1innerh1{
+  color: rgb(80, 35, 20);
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-top: 40px;
+  font-family: "Flame Bold";
+}
+#nav1innerp{
+  color: rgb(80, 35, 20);
+  font-size: 15px;
+  line-height: 25px;
+}
+#nav2{
+  background-color: rgb(80, 35, 20);
+  color: rgb(245, 235, 220);
+  padding: 25px 0px 25px 480px; 
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+#nav2a{
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+#nav3{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(80, 35, 20);
+  background-color: rgb(245, 235, 220);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 5;
+
+}
+.nav3p{
+  position: relative;
+  top: 7px;
+  right:5px;
+  font-size: 13px;
+} 
+.fotterList{
+  cursor: pointer;
 }
